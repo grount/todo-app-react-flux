@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 100%;
+    font-size: 100%;
+}
+
+html,
+body {
+    height: 100%;
+    background: #e8e8e8;
+}
+
+#main-content {
+    margin: auto;
+    position: relative;
+    top: 8%;
+    height: 70%;
+    width: 40%;
+    background: white;
+    border-radius: 30px;
+}
+
+.main-content-bar {
+    margin: auto;
+    background: white;
+    position: relative;
+    width: 40%;
+    height: 5%;
+    top: 7%;
+    border-radius: 25px;
+}
+
+.nav-bar {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background: white;
+}
+
+
+/* Why p doesn't inherit the nav-bar white color? */
+
+.nav-bar> #logo {
+    position: absolute;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 350%;
+    background: white;
+    font-family: 'Lobster', cursive;
+    color: #969494;
+    right: 38%;
+}
+
+.nav-bar>.nav-button {
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    font-family: 'Lobster', cursive;
+    /* learn inheritance again */
+    font-size: 1.2em;
+    color: #969494;
+    background: white;
+    border: none;
+    outline: none;
+    top: 0;
+}
+
+.nav-bar>.nav-button:hover {
+    color: rgb(75, 188, 246);
+}
+
+.nav-bar>#clear-button {
+    left: 29%;
+}
+
+.nav-bar>#clear-selected-button {
+    left: 64%
+}
+
+.nav-button.active {
+    background: #e8e8e8;
+}
+
+.form-main-bar-text {
+    position: absolute;
+    margin: auto;
+    background: white;
+    font-size: 200%;
+    height: 80%;
+    width: 90%;
+    line-height: 40px;
+    font-family: 'Raleway', sans-serif;
+    color: #ADABAB;
+    top: 6%;
+    left: 2.5%;
+    border-radius: 25px;
+}
+
+.form-main-bar-text:focus,
+input:focus {
+    outline: none;
+}
+
+.form-main-bar-button {
+    /* How to achieve resizing when still circle?*/
+    position: absolute;
+    background: white;
+    left: 93%;
+    top: 10%;
+    font-size: 35px;
+    border: 1px solid #969494;
+    color: #969494;
+    border-radius: 1000px;
+    height: 35px;
+    width: 35px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.form-main-bar-button:focus {
+    outline: none;
+}
+
+.form-main-bar-button:active {
+    background: #969494;
+    color: white;
+}
+
+#main-content>.task-entry {
+    padding: 10px 10px 5px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    border-style: hidden;
+    font-family: 'Kaushan Script', cursive;
+    color: rgb(82, 79, 79);
+    font-size: 22px;
+    /* background:rgba(140, 0, 2, 0.18); */
+    border-radius: 1000px;
+}
+
+#main-content>.task-entry>.checkbox {
+    margin-right: 10px;
+}
+
+#main-content>.task-entry>.done-button,
+.delete-button {
+    background: white;
+    position: absolute;
+    left: 95%;
+    color: rgb(82, 79, 79);
+}
+
+#main-content>.task-entry>.delete-button {
+    left: 91%;
+}
+
+#main-content>.task-entry>.done-button:hover,
+.delete-button:hover {
+    color: rgb(75, 188, 246);
+}
+
+.stroked {
+    text-decoration: line-through;
+}
+
+.date {
+    position: relative;
+    padding-top: 5px;
+    left: 3.5%;
+    font-size: 50%;
+}

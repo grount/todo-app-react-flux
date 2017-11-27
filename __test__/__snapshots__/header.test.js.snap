@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render properly 1`] = `
+<nav
+  className="nav-bar"
+>
+  <p
+    id="logo"
+  >
+    Todo-Application
+  </p>
+  <button
+    className="nav-button"
+    id="clear-button"
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    type="button"
+  >
+    Clear All
+  </button>
+  <button
+    className="nav-button"
+    id="clear-selected-button"
+    onMouseDown={[Function]}
+    onMouseUp={[Function]}
+    type="button"
+  >
+    Clear Selected
+  </button>
+</nav>
+`;
